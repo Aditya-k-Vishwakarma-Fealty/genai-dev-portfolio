@@ -31,11 +31,11 @@ export const HeroSection = () => {
             </span>
           </div>
           
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-primary bg-clip-text text-transparent">
+          <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-text bg-clip-text text-transparent">
             GenAI Fullstack Developer
           </h1>
           
-          <p className="text-xl md:text-2xl text-muted-foreground mb-8">
+          <p className="text-xl md:text-2xl bg-gradient-text bg-clip-text text-transparent mb-8">
             Building Intelligent Web Experiences with Generative AI
           </p>
           

@@ -109,6 +109,7 @@ export default {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-primary": "linear-gradient(135deg, hsl(var(--accent-gradient-from)), hsl(var(--accent-gradient-to)))",
         "gradient-bg": "linear-gradient(135deg, hsl(var(--gradient-from)), hsl(var(--gradient-via)), hsl(var(--gradient-to)))",
+        "gradient-text": "linear-gradient(135deg, hsl(var(--text-gradient-from)), hsl(var(--text-gradient-to)))",
       },
     },
   },

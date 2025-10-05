@@ -6,8 +6,8 @@ export const AboutSection = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12 animate-fade-in">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">
-              About <span className="bg-gradient-primary bg-clip-text text-transparent">Me</span>
+            <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-text bg-clip-text text-transparent">
+              About Me
             </h2>
             <div className="w-20 h-1 bg-gradient-primary mx-auto rounded-full"></div>
           </div>

@@ -64,8 +64,8 @@ export const ProjectsSection = () => {
     <section id="projects" className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12 animate-fade-in">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            Featured <span className="bg-gradient-primary bg-clip-text text-transparent">Projects</span>
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-text bg-clip-text text-transparent">
+            Featured Projects
           </h2>
           <div className="w-20 h-1 bg-gradient-primary mx-auto rounded-full"></div>
           <p className="text-muted-foreground mt-4 max-w-2xl mx-auto">
