@@ -1,36 +1,42 @@
 import { Badge } from "@/components/ui/badge";
-import { Code, Database, Brain, Cloud } from "lucide-react";
+import { Code, Database, Brain, Cloud, Zap } from "lucide-react";
 
 const skillCategories = [
   {
-    title: "Frontend",
+    title: "Languages",
     icon: Code,
-    skills: ["React", "Next.js", "TypeScript", "HTML5", "CSS3", "JavaScript", "Tailwind CSS"],
+    skills: ["Python", "C++", "JavaScript", "SQL", "C", "Java", "Rust"],
     color: "primary",
   },
   {
-    title: "Backend",
+    title: "Frameworks & Libraries",
     icon: Database,
-    skills: ["Node.js", "Express", "REST APIs", "GraphQL", "Python", "Django"],
+    skills: ["ReactJS", "NodeJS", "Express", "Bootstrap", "TailwindCSS", "Django", "LangChain", "LanGraph", "FastAPI"],
     color: "accent",
   },
   {
     title: "Databases",
     icon: Database,
-    skills: ["MySQL", "PostgreSQL", "MongoDB", "Redis", "Supabase"],
+    skills: ["SQL", "MongoDB", "PostgreSQL", "Neo4j", "ChromaDB", "FAISSDB", "Weaviate"],
     color: "primary",
   },
   {
     title: "Generative AI",
     icon: Brain,
-    skills: ["OpenAI GPT API", "LangChain", "AI Integration", "Prompt Engineering", "Vector Databases"],
+    skills: ["OpenAI API", "Hugging Face", "TensorFlow", "PyTorch", "Transformers", "RAG Pipelines", "Prompt Engineering"],
     color: "accent",
   },
   {
-    title: "DevOps & Tools",
+    title: "Tools & Platforms",
     icon: Cloud,
-    skills: ["Git", "GitHub", "Docker", "Vercel", "CI/CD", "AWS", "Linux"],
+    skills: ["GitHub", "GIT", "Jupyter Notebook", "MySQL", "VS Code", "Pycharm", "IntelliJ IDEA", "Linux"],
     color: "primary",
+  },
+  {
+    title: "Automations & Agentic AI",
+    icon: Zap,
+    skills: ["n8n", "Automa", "Selenium", "Workflow Automation", "AI Agents", "Task Automation", "Zapier"],
+    color: "accent",
   },
 ];
 

@@ -4,56 +4,56 @@ import { ExternalLink, Github, Sparkles } from "lucide-react";
 
 const projects = [
   {
-    title: "AI Content Generator Platform",
-    description: "A SaaS platform that leverages GPT-4 to generate marketing content, blog posts, and social media copies with advanced customization options.",
-    features: ["AI-powered generation", "Custom templates", "Multi-language support", "Real-time collaboration"],
-    tech: ["React", "Node.js", "OpenAI API", "MongoDB", "Stripe"],
+    title: "SMTS – Smart Mail Transmission System",
+    description: "AI-powered postal logistics optimizer using Dijkstra's Algorithm for shortest route calculation and K-Means Clustering for sorting hub efficiency. Integrated Google Maps API for real-time mail tracking, reducing delivery time and operational costs.",
+    features: ["Route optimization", "Real-time tracking", "AI-powered sorting", "Cost reduction"],
+    tech: ["MERN", "AI", "Google Maps API", "Graph Algorithms", "K-Means Clustering"],
     aiIntegrated: true,
     demo: "#",
     github: "#",
   },
   {
-    title: "Smart Document Analysis Tool",
-    description: "An intelligent document processor that uses LangChain and vector databases to extract insights, answer questions, and summarize large documents.",
-    features: ["PDF processing", "Semantic search", "Q&A capabilities", "Multi-document analysis"],
-    tech: ["Next.js", "Python", "LangChain", "Pinecone", "FastAPI"],
+    title: "Fealty AI – Advanced RAG Application",
+    description: "Personalized AI assistant for database interaction using advanced RAG pipelines. Converts natural language queries into SQL, retrieves results, and communicates through LLMs, enabling efficient, human-like data access.",
+    features: ["Natural language queries", "SQL conversion", "RAG pipelines", "Human-like interaction"],
+    tech: ["RAG", "LLMs", "Vector Databases", "SQL", "FastAPI"],
     aiIntegrated: true,
     demo: "#",
     github: "#",
   },
   {
-    title: "E-Commerce Platform",
-    description: "A full-featured e-commerce solution with real-time inventory management, payment processing, and AI-powered product recommendations.",
-    features: ["Payment integration", "Admin dashboard", "AI recommendations", "Order tracking"],
-    tech: ["React", "Node.js", "PostgreSQL", "Redis", "AWS S3"],
+    title: "Bento – AI-powered Food Delivery App",
+    description: "Smart tiffin service with ML-based meal recommendations, dynamic pricing algorithms, and real-time delivery tracking via Google Maps API. Integrated secure payment systems (Razorpay/Stripe) for seamless transactions.",
+    features: ["ML recommendations", "Dynamic pricing", "Real-time tracking", "Payment integration"],
+    tech: ["MERN", "AI", "Geolocation API", "Payment Gateway", "Machine Learning"],
     aiIntegrated: true,
     demo: "#",
     github: "#",
   },
   {
-    title: "Real-Time Collaboration App",
-    description: "A collaborative workspace application featuring real-time updates, video conferencing, and AI meeting summaries.",
-    features: ["WebSocket integration", "Video calls", "AI summaries", "File sharing"],
-    tech: ["React", "Socket.io", "WebRTC", "Express", "MongoDB"],
+    title: "AI Resume & Job Matcher",
+    description: "AI-driven recruitment assistant matching resumes to job descriptions via semantic search and embeddings. Utilized OpenAI API for skill gap analysis and personalized recommendations, with Pinecone for fast, context-aware retrieval.",
+    features: ["Semantic search", "Skill gap analysis", "Personalized recommendations", "Context-aware retrieval"],
+    tech: ["React.js", "OpenAI API", "Chroma", "FastAPI", "Pinecone"],
     aiIntegrated: true,
     demo: "#",
     github: "#",
   },
   {
-    title: "Task Management Dashboard",
-    description: "An intelligent task manager with AI-powered prioritization, deadline predictions, and automated workflow suggestions.",
-    features: ["AI task prioritization", "Team collaboration", "Analytics dashboard", "Custom workflows"],
-    tech: ["Next.js", "TypeScript", "Supabase", "OpenAI", "Tailwind"],
-    aiIntegrated: true,
-    demo: "#",
-    github: "#",
-  },
-  {
-    title: "API Monitoring System",
-    description: "A comprehensive API monitoring and analytics platform with automated alerts and performance insights.",
-    features: ["Real-time monitoring", "Custom alerts", "Performance analytics", "API testing"],
-    tech: ["React", "Node.js", "InfluxDB", "GraphQL", "Docker"],
+    title: "WhatsApp Web Broadcasting Automation",
+    description: "Automated bulk, personalized WhatsApp messaging using Automa for browser automation. Improved delivery accuracy and campaign efficiency through dynamic message injection and URL template integration.",
+    features: ["Bulk messaging", "Personalization", "Browser automation", "Campaign efficiency"],
+    tech: ["Automa", "JavaScript", "Browser Automation", "WhatsApp API"],
     aiIntegrated: false,
+    demo: "#",
+    github: "#",
+  },
+  {
+    title: "MediAid",
+    description: "AI-powered medicine information and prescription assistant providing accurate extraction of medicine details from prescriptions and packaging using OCR and Generative AI. Leveraged OpenAI API for text enhancement, entity extraction, and structured data generation.",
+    features: ["Medicine extraction", "Prescription parsing", "AI text correction", "OCR integration", "Entity recognition"],
+    tech: ["React Native", "FastAPI", "OpenAI API", "Google Vision API", "Python", "OCR"],
+    aiIntegrated: true,
     demo: "#",
     github: "#",
   },
@@ -80,14 +80,6 @@ export const ProjectsSection = () => {
               className="bg-card p-6 rounded-2xl border border-border shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 animate-fade-in-up group"
               style={{ animationDelay: `${index * 100}ms` }}
             >
-              {project.aiIntegrated && (
-                <div className="flex items-center gap-2 mb-3">
-                  <Badge variant="default" className="bg-gradient-primary">
-                    <Sparkles className="h-3 w-3 mr-1" />
-                    AI Integrated
-                  </Badge>
-                </div>
-              )}
               
               <h3 className="text-2xl font-bold mb-3 group-hover:text-primary transition-colors">
                 {project.title}

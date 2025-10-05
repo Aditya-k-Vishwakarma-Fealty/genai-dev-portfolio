@@ -46,9 +46,9 @@ export const Navigation = () => {
               e.preventDefault();
               scrollToSection("#home");
             }}
-            className="text-xl font-bold bg-gradient-primary bg-clip-text text-transparent"
+            className="text-xl font-bold text-muted-foreground hover:text-foreground transition-colors"
           >
-            Portfolio
+            
           </a>
 
           {/* Desktop Navigation */}

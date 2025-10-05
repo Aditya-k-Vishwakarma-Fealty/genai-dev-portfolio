@@ -2,27 +2,27 @@ import { Briefcase, TrendingUp } from "lucide-react";
 
 const experiences = [
   {
-    company: "Tech Innovations Inc.",
-    role: "Fullstack Developer (GenAI Specialist)",
-    duration: "Jan 2023 - Present",
+    company: "Fealty Technologies PVT LTD",
+    role: "Full Stack GenAI Developer",
+    duration: "Present (On-Site)",
     achievements: [
-      "Architected and deployed 5+ fullstack applications integrating GPT-4 and LangChain for intelligent features",
-      "Optimized AI-powered recommendation engine, reducing response latency by 40% and improving user engagement by 25%",
-      "Led migration of legacy systems to modern React/Node.js stack with AI integration, serving 50K+ active users",
-      "Implemented CI/CD pipelines reducing deployment time by 60% and improving code quality through automated testing",
-      "Collaborated with cross-functional teams to deliver scalable solutions meeting complex business requirements",
+      "Generative AI & Prompt Engineering: Working with LLMs (GPT, LLaMA, Claude), Fine-tuning, LangChain, RAG pipelines",
+      "AI Development & Data Handling: OpenAI API, Hugging Face, TensorFlow, PyTorch, Vector Databases (ChromaDB, FAISS, Weaviate)",
+      "Backend & API Integration: FastAPI, Flask, Node.js for scalable AI-powered applications and APIs",
+      "Advanced NLP preprocessing, Embeddings, and context optimization for AI applications",
+      "Zero-shot, Few-shot, Chain-of-thought prompting techniques for enhanced AI performance",
     ],
   },
   {
-    company: "Digital Solutions Co.",
-    role: "Junior Fullstack Developer",
-    duration: "Jun 2022 - Dec 2022",
+    company: "Zenbourg",
+    role: "AI Automation Intern",
+    duration: "Remote",
     achievements: [
-      "Developed responsive web applications using React, Node.js, and PostgreSQL",
-      "Integrated OpenAI API for customer support chatbot, reducing ticket resolution time by 30%",
-      "Built RESTful APIs handling 10K+ requests daily with comprehensive error handling and logging",
-      "Participated in agile development cycles with bi-weekly sprints and code reviews",
-      "Contributed to open-source projects and maintained technical documentation",
+      "Engineered automation workflows using n8n and Zapier to seamlessly integrate business tools and eliminate manual bottlenecks",
+      "Developed Selenium-based test suites for end-to-end web application testing and UI validation",
+      "Collaborated with cross-functional teams on automation initiatives, boosting internal productivity by 60%",
+      "Streamlined operations and accelerated project delivery timelines through automation",
+      "Performance monitoring and ensuring product reliability through comprehensive testing",
     ],
   },
 ];
@@ -41,13 +41,14 @@ export const ExperienceSection = () => {
           </p>
         </div>
 
-        <div className="max-w-4xl mx-auto space-y-8">
-          {experiences.map((exp, index) => (
-            <div
-              key={exp.company}
-              className="bg-card p-8 rounded-2xl border border-border shadow-lg hover:shadow-xl transition-all duration-300 animate-fade-in-up"
-              style={{ animationDelay: `${index * 150}ms` }}
-            >
+        <div className="max-w-7xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-6">
+            {experiences.map((exp, index) => (
+              <div
+                key={exp.company}
+                className="bg-card p-8 rounded-2xl border border-border shadow-lg hover:shadow-xl transition-all duration-300 animate-fade-in-up"
+                style={{ animationDelay: `${index * 150}ms` }}
+              >
               <div className="flex items-start gap-4 mb-6">
                 <div className="p-3 bg-primary/10 rounded-lg">
                   <Briefcase className="h-6 w-6 text-primary" />
@@ -72,9 +73,10 @@ export const ExperienceSection = () => {
                     </li>
                   ))}
                 </ul>
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
     </section>

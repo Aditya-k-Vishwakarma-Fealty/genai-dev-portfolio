@@ -107,21 +107,30 @@ export const ContactSection = () => {
               
               <div className="space-y-4 mb-8">
                 <a
-                  href="mailto:your.email@example.com"
+                  href="mailto:adityakvishwakarmaofficial@gmail.com"
                   className="flex items-center gap-3 text-muted-foreground hover:text-primary transition-colors group"
                 >
                   <div className="p-2 bg-primary/10 rounded-lg group-hover:bg-primary/20 transition-colors">
                     <Mail className="h-5 w-5 text-primary" />
                   </div>
-                  <span>your.email@example.com</span>
+                  <span>adityakvishwakarmaofficial@gmail.com</span>
                 </a>
+                
+                <div className="flex items-center gap-3 text-muted-foreground">
+                  <div className="p-2 bg-primary/10 rounded-lg">
+                    <svg className="h-5 w-5 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                    </svg>
+                  </div>
+                  <span>+91 7987214753</span>
+                </div>
               </div>
 
               <div className="pt-6 border-t border-border">
                 <h4 className="text-sm font-semibold mb-4 text-muted-foreground">Follow me on</h4>
                 <div className="flex gap-4">
                   <a
-                    href="https://github.com"
+                    href="https://github.com/aditya"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="p-3 bg-secondary hover:bg-primary/20 rounded-lg transition-all duration-300 hover:scale-110"
@@ -137,12 +146,15 @@ export const ContactSection = () => {
                     <Linkedin className="h-5 w-5" />
                   </a>
                   <a
-                    href="https://twitter.com"
+                    href="https://linktr.ee/aditya"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="p-3 bg-secondary hover:bg-primary/20 rounded-lg transition-all duration-300 hover:scale-110"
                   >
-                    <Twitter className="h-5 w-5" />
+                    <svg className="h-5 w-5" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M13.5 2c-5.621 0-10.211 4.443-10.475 10h3.005c.264-3.86 3.464-7 7.47-7 4.006 0 7.206 3.14 7.47 7h3.005c-.264-5.557-4.854-10-10.475-10z"/>
+                      <path d="M10.5 22c5.621 0 10.211-4.443 10.475-10h-3.005c-.264 3.86-3.464 7-7.47 7-4.006 0-7.206-3.14-7.47-7H.025c.264 5.557 4.854 10 10.475 10z"/>
+                    </svg>
                   </a>
                 </div>
               </div>
