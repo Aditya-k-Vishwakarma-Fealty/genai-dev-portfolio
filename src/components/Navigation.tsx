@@ -38,17 +38,17 @@ export const Navigation = () => {
         isScrolled ? "bg-card/95 backdrop-blur-md shadow-lg" : "bg-transparent"
       }`}
     >
-      <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-16">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex items-center justify-between h-14 sm:h-16">
           <a
             href="#home"
             onClick={(e) => {
               e.preventDefault();
               scrollToSection("#home");
             }}
-            className="text-xl font-bold text-muted-foreground hover:text-foreground transition-colors"
+            className="text-lg sm:text-xl font-bold text-muted-foreground hover:text-foreground transition-colors"
           >
-            
+            Portfolio
           </a>
 
           {/* Desktop Navigation */}
@@ -61,7 +61,7 @@ export const Navigation = () => {
                   e.preventDefault();
                   scrollToSection(item.href);
                 }}
-                className="px-4 py-2 rounded-md text-sm font-medium text-muted-foreground hover:text-foreground hover:bg-secondary transition-all duration-200"
+                className="px-3 lg:px-4 py-2 rounded-md text-sm font-medium text-muted-foreground hover:text-foreground hover:bg-secondary transition-all duration-200"
               >
                 {item.name}
               </a>
@@ -72,16 +72,16 @@ export const Navigation = () => {
           <Button
             variant="ghost"
             size="icon"
-            className="md:hidden"
+            className="md:hidden h-9 w-9"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
-            {isMobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+            {isMobileMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
           </Button>
         </div>
 
         {/* Mobile Navigation */}
         {isMobileMenuOpen && (
-          <div className="md:hidden py-4 animate-fade-in">
+          <div className="md:hidden py-3 animate-fade-in bg-card/95 backdrop-blur-md border-t border-border">
             {navItems.map((item) => (
               <a
                 key={item.name}
@@ -90,7 +90,7 @@ export const Navigation = () => {
                   e.preventDefault();
                   scrollToSection(item.href);
                 }}
-                className="block px-4 py-3 text-sm font-medium text-muted-foreground hover:text-foreground hover:bg-secondary rounded-md transition-all duration-200"
+                className="block px-4 py-2.5 text-sm font-medium text-muted-foreground hover:text-foreground hover:bg-secondary rounded-md transition-all duration-200 mx-2"
               >
                 {item.name}
               </a>

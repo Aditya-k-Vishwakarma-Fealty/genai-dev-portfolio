@@ -61,62 +61,62 @@ const projects = [
 
 export const ProjectsSection = () => {
   return (
-    <section id="projects" className="py-20 bg-background">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-12 animate-fade-in">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-text bg-clip-text text-transparent">
+    <section id="projects" className="py-16 sm:py-20 bg-background">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-8 sm:mb-12 animate-fade-in">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 bg-gradient-text bg-clip-text text-transparent">
             Featured Projects
           </h2>
           <div className="w-20 h-1 bg-gradient-primary mx-auto rounded-full"></div>
-          <p className="text-muted-foreground mt-4 max-w-2xl mx-auto">
+          <p className="text-sm sm:text-base text-muted-foreground mt-4 max-w-2xl mx-auto px-4">
             Showcasing innovative solutions that combine fullstack development with AI capabilities
           </p>
         </div>
 
-        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6">
           {projects.map((project, index) => (
             <div
               key={project.title}
-              className="bg-card p-6 rounded-2xl border border-border shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 animate-fade-in-up group"
+              className="bg-card p-4 sm:p-6 rounded-2xl border border-border shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 animate-fade-in-up group"
               style={{ animationDelay: `${index * 100}ms` }}
             >
               
-              <h3 className="text-2xl font-bold mb-3 group-hover:text-primary transition-colors">
+              <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-3 group-hover:text-primary transition-colors leading-tight">
                 {project.title}
               </h3>
               
-              <p className="text-muted-foreground mb-4 leading-relaxed">
+              <p className="text-sm sm:text-base text-muted-foreground mb-4 leading-relaxed">
                 {project.description}
               </p>
               
               <div className="mb-4">
-                <h4 className="text-sm font-semibold mb-2 text-foreground/80">Key Features:</h4>
-                <ul className="grid grid-cols-2 gap-2">
+                <h4 className="text-xs sm:text-sm font-semibold mb-2 text-foreground/80">Key Features:</h4>
+                <ul className="grid grid-cols-1 sm:grid-cols-2 gap-1.5 sm:gap-2">
                   {project.features.map((feature) => (
-                    <li key={feature} className="text-sm text-muted-foreground flex items-center">
-                      <span className="w-1.5 h-1.5 bg-primary rounded-full mr-2"></span>
-                      {feature}
+                    <li key={feature} className="text-xs sm:text-sm text-muted-foreground flex items-start">
+                      <span className="w-1.5 h-1.5 bg-primary rounded-full mr-2 mt-1.5 flex-shrink-0"></span>
+                      <span className="leading-relaxed">{feature}</span>
                     </li>
                   ))}
                 </ul>
               </div>
               
-              <div className="flex flex-wrap gap-2 mb-4">
+              <div className="flex flex-wrap gap-1.5 sm:gap-2 mb-4">
                 {project.tech.map((tech) => (
-                  <Badge key={tech} variant="secondary" className="text-xs">
+                  <Badge key={tech} variant="secondary" className="text-xs px-2 py-1">
                     {tech}
                   </Badge>
                 ))}
               </div>
               
-              <div className="flex gap-3">
-                <Button variant="default" size="sm" asChild>
+              <div className="flex flex-col sm:flex-row gap-2 sm:gap-3">
+                <Button variant="default" size="sm" asChild className="w-full sm:w-auto">
                   <a href={project.demo} target="_blank" rel="noopener noreferrer">
                     <ExternalLink className="h-4 w-4 mr-2" />
                     Live Demo
                   </a>
                 </Button>
-                <Button variant="outline" size="sm" asChild>
+                <Button variant="outline" size="sm" asChild className="w-full sm:w-auto">
                   <a href={project.github} target="_blank" rel="noopener noreferrer">
                     <Github className="h-4 w-4 mr-2" />
                     Code
